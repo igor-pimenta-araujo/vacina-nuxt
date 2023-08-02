@@ -1,6 +1,5 @@
 <script setup>
 import { defineProps } from "vue";
-import { HttpTransportType, HubConnection, HubConnectionBuilder } from "@aspnet/signalr";
 
 const props = defineProps({
   agendas: {
