@@ -266,7 +266,7 @@ const admin = ref(false);
 
 onMounted(() => {
   if (localStorage.getItem("admin")) {
-    admin.value = true;
+    admin.value = localStorage.getItem("admin");
   }
 });
 
