@@ -9,6 +9,7 @@ const dia = ref("");
 const listaUsuarios = ref([]);
 const listaVacinas = ref([]);
 const steps = ["Usuario", "Vacina", "Data"];
+const teste = false;
 
 onMounted(() => {
   if (localStorage.getItem("admin") == "false") {
