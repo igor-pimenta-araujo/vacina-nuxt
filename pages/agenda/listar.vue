@@ -1,6 +1,7 @@
 <script setup>
 import { ref, defineProps } from "vue";
 import axios from "axios";
+import { HttpTransportType, HubConnection, HubConnectionBuilder } from "@aspnet/signalr";
 
 const listAgenda = ref([]);
 
@@ -26,10 +27,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    class="bg-gray-900 min-h-screen p-8 md:p-24 items-center justify-center min-w-screen"
-  >
-    <menu-search />
-    <listar-agendas :agendas="listAgenda" />
+  <div>
+    <menu-flyout />
+    <div
+      class="bg-gray-900 min-h-screen p-8 md:p-24 items-center justify-center min-w-screen"
+    >
+      <listar-agendas :agendas="listAgenda" />
+    </div>
   </div>
 </template>
