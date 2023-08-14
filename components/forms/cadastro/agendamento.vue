@@ -14,7 +14,7 @@ const teste = false;
 onMounted(() => {
   if (localStorage.getItem("admin") == "false") {
     step.value = 1;
-    idUsuario.value = localStorage.getItem("userId");
+    idUsuario.value = localStorage.getItem("user");
     document.getElementById("usuario").disabled = true;
   }
   getUsuarios();
